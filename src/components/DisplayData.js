@@ -43,7 +43,7 @@ const DisplayData = (props) => {
                 </ul>
                 </section>
                 <footer className="block relative left-0 bottom-0 w-full mb-8 text-center">
-                    <p className="text-gray-400 font-mono text-xs">Data sourced from <a className="link text-blue-500 hover:text-blue-700 transition-all" href="https://corona.lmao.ninja/" target="_blank">disease.sh</a>. Built using <a className="link text-blue-500 hover:text-blue-700 transition-all" href="https://reactjs.org/" target="_blank">React</a> + <a className="link text-blue-500 hover:text-blue-700 transition-all" href="http://tailwindcss.com/" target="_blank">Tailwind CSS</a>. Find it on <a className="link text-blue-500 hover:text-blue-700 transition-all" href="https://github.com/alinuredini/covid-tracker-alpha" target="_blank">Github.</a></p>
+                    <p className="text-gray-400 font-mono text-xs">Data sourced from <a className="link text-blue-500 hover:text-blue-700 transition-all" href="https://corona.lmao.ninja/" target="_blank"  rel="noopener">disease.sh</a>. Built using <a className="link text-blue-500 hover:text-blue-700 transition-all" href="https://reactjs.org/" target="_blank"  rel="noopener">React</a> + <a className="link text-blue-500 hover:text-blue-700 transition-all" href="http://tailwindcss.com/" target="_blank"  rel="noopener">Tailwind CSS</a>. Find it on <a className="link text-blue-500 hover:text-blue-700 transition-all" href="https://github.com/alinuredini/covid-tracker-alpha" target="_blank" rel="noopener">Github.</a></p>
                 </footer>
             </main>
         )
