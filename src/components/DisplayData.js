@@ -21,16 +21,16 @@ const DisplayData = (props) => {
                     <p className="text-gray-600 text-base sm:text-2xl sm:pb-4">Cases per One Million:</p>
                     <p className="text-2xl text-gray-800 font-bold sm:text-5xl">{casesPerOneMillion}</p>
                 </li>
-                <li className="bg-blue-100 py-10 py-20 font-mono text-xl p-10 py-20 rounded-lg">
+                <li className="bg-blue-100 py-10 font-mono text-xl p-10 rounded-lg">
                 <p className="text-gray-600 text-base sm:text-2xl sm:pb-4">Total Deaths:</p>
                 <p className="text-2xl text-gray-800 font-bold sm:text-5xl">{deaths}</p></li>
-                <li className="bg-blue-100 py-10 py-20 font-mono text-xl p-10 py-20 rounded-lg">
+                <li className="bg-blue-100 py-20 font-mono text-xl p-10 rounded-lg">
                 <p className="text-gray-600 text-base sm:text-2xl sm:pb-4">
                 Total Recovered:</p>
                 <p className="text-2xl text-gray-800 font-bold sm:text-5xl">
                 {recovered}
                 </p></li>
-                <li className="bg-blue-100 py-10 py-20 font-mono text-xl p-10 py-20 rounded-lg">
+                <li className="bg-blue-100 font-mono text-xl p-10 py-20 rounded-lg">
                 <p className="text-gray-600 text-base sm:text-2xl sm:pb-4">
                 Cases Reported Today: </p>
                 <p className="text-2xl text-gray-800 font-bold sm:text-5xl">
