@@ -21,20 +21,20 @@ const DisplayData = (props) => {
                 </section>
                 <section className="p-4 sm:pt-2 sm:pb-8 sm:px-40 mb-2">
                 <ul className="sm:grid sm:grid-cols-2 sm:gap-4 flex flex-col gap-4">
-                <li className="bg-blue-100 font-mono text-xl p-10 py-20 rounded-lg">
+                <li className="bg-blue-100 font-mono text-xl p-10 py-20 rounded-lg mb-2 sm:mb-0">
                     <p className="text-gray-600 text-base sm:text-2xl sm:pb-4">Cases Reported Today:</p>
                     <p className="text-2xl text-gray-800 font-bold sm:text-5xl">{todayCases}</p>
                 </li>
-                <li className="bg-yellow-400 font-mono text-xl p-10 py-20 rounded-lg">
+                <li className="bg-yellow-400 font-mono text-xl p-10 py-20 rounded-lg mb-2 sm:mb-0">
                 <p className="text-gray-600 text-base sm:text-2xl sm:pb-4">Total Deaths:</p>
                 <p className="text-2xl text-gray-800 font-bold sm:text-5xl">{deaths}</p></li>
-                <li className="bg-green-200 py-20 font-mono text-xl p-10 rounded-lg">
+                <li className="bg-green-200 py-20 font-mono text-xl p-10 rounded-lg mb-2 sm:mb-0">
                 <p className="text-gray-600 text-base sm:text-2xl sm:pb-4">
                 Total Recovered:</p>
                 <p className="text-2xl text-gray-800 font-bold sm:text-5xl">
                 {recovered}
                 </p></li>
-                <li className="bg-yellow-400 font-mono text-xl p-10 py-20 rounded-lg">
+                <li className="bg-yellow-400 font-mono text-xl p-10 py-20 rounded-lg mb-2 sm:mb-0">
                 <p className="text-gray-600 text-base sm:text-2xl sm:pb-4">
                 Cases per One Million: </p>
                 <p className="text-2xl text-gray-800 font-bold sm:text-5xl">
