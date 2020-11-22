@@ -11,7 +11,7 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    fetch("https://corona.lmao.ninja/v3/covid-19/countries/germany")
+    fetch("https://corona.lmao.ninja/v3/covid-19/countries/germany?yesterday=true")
     .then(response => response.json())
     .then(data => {
       this.setState({
