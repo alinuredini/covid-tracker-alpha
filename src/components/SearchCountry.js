@@ -21,7 +21,7 @@ const SearchCountry = () => {
             )
         }
         let url;
-        country === '' ? noCountry() : url = `https://corona.lmao.ninja/v2/countries/${country}`
+        country === '' ? noCountry() : url = `https://corona.lmao.ninja/v3/covid-19/countries/${country}`
 
         try {
             const res = await fetch(url);
@@ -33,7 +33,7 @@ const SearchCountry = () => {
                 setLoading(false)
             } else {
                 setError(true)
-                setCountry("")
+                setCountry('')
             }
 
             const info = await data.countryInfo
@@ -88,10 +88,12 @@ const SearchCountry = () => {
             </form>
 
             {
-                error ? <h3 className="error">Error : Country Not Found or Mis-spelled. Please reload</h3> : <DisplayData
+                error ? <h3 className="error">Error : Country Not Found or misspelled. Please reload</h3> : <DisplayData
                     imgSrc={countInfo.flag}
+                    country={details.country}
                     cases={details.cases}
                     deaths={details.deaths}
+                    casesPerOneMillion={details.casesPerOneMillion}
                     recovered={details.recovered}
                     todayCases={details.todayCases}
                     loading={loading}
