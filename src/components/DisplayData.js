@@ -3,20 +3,19 @@ import Spinner from './Spinner'
 
 
 const DisplayData = (props) => {
-    const { cases, deaths, recovered, country, todayCases, casesPerOneMillion, imgSrc, error } = props;
+    const { cases, deaths, recovered, todayCases, casesPerOneMillion, error } = props;
 
 
     if (props.loading) {
         return <Spinner />
     } else if (cases) {
         return (
-            <main className="bg-gray-50 h-full min-h-screen" >
-                <header className="flex items-center h-12 border-b bg-blue-100 py-10 w-full sm:pl-40 pl-4 pt-12">
-                <img className="rounded-full h-8 w-8 items-center justify-center" src={imgSrc} alt="" />
-                <h1 className="text-xl text-gray-900 font-bold hover:text-gray-700 ml-4 sm:text-4xl">{country}</h1>
-                </header>
-                <section className="p-4 sm:p-8 mt-2 sm:px-40">
-                    <div className="text-center p-4 sm:p-10 py-10 sm:px-40 bg-red-200 sm:mx-auto sm:w-1/2 rounded-lg"><p className="text-left pl-5 font-mono text-gray-800 font-bold text-2xl sm:text-4xl sm:text-center sm:pl-0">Stay Home!</p>
+            <main className="bg-gray-50" >
+                
+                <section className="p-4 sm:p-8 mt-2 sm:px-40 flex">
+
+                    <div className="text-center p-4 sm:p-10 py-10 sm:px-40 bg-red-200 sm:mx-auto sm:w-1/2 rounded-lg"><p className="text-left pl-5 font-mono text-gray-800 font-bold text-2xl sm:text-4xl sm:text-center sm:pl-0">Stay Home!
+                    </p>
                     <p className="text-left pl-5 font-mono text-gray-600 text-sm pt-2 sm:text-center sm:pl-0">If you must go outside, wear a mask and distance properly.</p></div>
                 </section>
                 <section className="p-4 sm:pt-2 sm:pb-8 sm:px-40 mb-2">

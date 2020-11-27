@@ -6,10 +6,12 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
-    "postcss": "^8.1.8",
+    "postcss": "^8.1.10",
     "react": "^16.14.0",
     "react-dom": "^16.13.1",
-    "react-scripts": "^3.4.1"
+    "react-language-kit": "^1.2.0-rc.1",
+    "react-scripts": "^4.0.1",
+    "typescript": "^3.7.0-beta"
   },
   "scripts": {
     "start": "npm run watch:css && react-scripts start",
@@ -34,7 +36,7 @@
     ]
   },
   "devDependencies": {
-    "autoprefixer": "^9.8.6",
+    "autoprefixer": "^10.0.3",
     "postcss-cli": "^8.3.0",
     "tailwindcss": "^2.0.1"
   }
